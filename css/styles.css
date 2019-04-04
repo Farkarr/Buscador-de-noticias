@@ -15,7 +15,8 @@ body{
     margin-bottom: 2%;
     margin-top: 5%;
     width: 76%;
-    border: 3px solid green;
+    border: 3px solid#FF1800 ;
+    background-color:#FF6D5E ; 
     height: auto;    
 }
 
@@ -23,8 +24,9 @@ body{
     display: block;
     padding: 12px;
     width: 23%;
-    border: 3px solid blue;
-    background-color: gainsboro;
+    border: 5px solid#FF4532 ;
+    
+    background-color: #FF6D5E;
     text-align: center;
     margin: 0 auto;
     height: 27px;
@@ -46,7 +48,7 @@ margin-left: 15%;
     margin-top: 4%;
     margin: 0 auto;
     width: 23%;
-    border: 3px solid blue;
+    border: 3px solid #FF4532;
     background-color: gainsboro;
     text-align: center;
     height: 50%;
@@ -55,12 +57,12 @@ margin-left: 15%;
 
 .lista-noticias{
     display: block;
-    border: 3px blue solid;
-    background-color: brown;
+    border: 3px #FF4532 solid;
+    background-color: white;
     /* margin-top: 5%; */
     margin: 0 auto;
     width: 75%;
-    border: 1px solid green;
+    border: 6px solid #FF4532 ;
     text-align: left;
     height: 1100px;    
     
@@ -101,14 +103,28 @@ font-size: 120%;
 .img-noticia{
     display: block;
     width: 100%;
+    height: 100vh;
 }
 
-.cont-noticia{
+.atras-slider{
+    display: inline-block;
+    margin-left: 70%;
+    height: 30px;
     
-   
+
 }
 
+.delante-slider{
+    display: inline-block;
+    margin-left: 10%;
+    height: 30px;
 
+}
+
+.filtro{
+    
+
+}
 
 
 
