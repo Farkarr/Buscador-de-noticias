@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
                                 if (tituloSplit[i] == palabra) {
 
                                     
-                                    let noticiaBuscada = `
+                                    let palabraBuscada = `
 
                                         <article class="article-class">
                                             <img src="" alt="" class="logo-periodico">
@@ -36,9 +36,8 @@ window.addEventListener("load", function () {
                                             <a href="#">Leer mas...</a>
                                         </article>
                                     `;
-                                    console.log(titulo)
 
-                                    listaNoticias.innerHTML = noticiaBuscada;
+                                    listaNoticias.insertAdjacentHTML("beforeend", palabraBuscada);
                                 }
                             }
                         });
