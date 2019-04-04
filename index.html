@@ -1,41 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
-    <script src="./js/slider.js"></script>
+    <script src="./js/slider.js" ></script>
     <script src="./js/apiNews.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header id="cont-slider">
         <button class="atras-slider">Atras</button>
-        <div class="cont-noticia">
-            <img src="#" class="img-noticia">
+        <img src="./img/coche.jpg" class="img-noticia"> 
+        <!-- <div class="cont-noticia">
+           
             <h2 class="titulo-slider-noticia">Hola</h2>
-            <h3 class="subt-slider-noticia"></h3> 
-        </div>
+            <h3 class="subt-slider-noticia"></h3>
+        </div> -->
         <button class="delante-slider">Delante</button>
     </header>
+
     <main>
         <form action="">
-            <input type="text" placeholder="Escribe tu busqueda">
+            <input class="buscador-caja" type="text" placeholder="Escribe tu busqueda">
             <button class="boton-busqueda">
                 <img src="" alt="" class="img-busqueda">
             </button>
         </form>
         <button class="filtro"></button>
-        <div class="pestaña-filtro"></div>
+        <div class="pestaña-filtro">Pestaña-plegable</div>
         <section class="lista-noticias">
-            <!--  <article>
+            <article class="article-class">
                 <img src="" alt="" class="logo-periodico">
-                <h3 class="titulo-noticia-lista"></h3>
-                <p class="subt-noticia-lista"></p>.
+                <h3 class="titulo-noticia-lista">titulo</h3>
+                <p class="subt-noticia-lista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus
+                    tempora aspernatur facilis doloribus ad quidem neque vero suscipit, id minima at nemo ea consectetur
+                    incidunt perferendis adipisci illum molestiae.</p>.
                 <a href="#">Leer mas...</a>
-            </article> -->
+            </article>
+            <article class="article-class">
+                <img src="" alt="" class="logo-periodico">
+                <h3 class="titulo-noticia-lista">titulo</h3>
+                <p class="subt-noticia-lista">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate,
+                    praesentium minima officiis placeat tempore nostrum illo necessitatibus recusandae velit quae, quam
+                    aliquam sint nisi tempora! Nobis non eaque accusamus ullam!</p>.
+                <a href="#">Leer mas...</a>
+            </article>
+            <article class="article-class">
+                <img src="" alt="" class="logo-periodico">
+                <h3 class="titulo-noticia-lista">titulo</h3>
+                <p class="subt-noticia-lista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam
+                    neque quibusdam, praesentium iste alias repudiandae veniam blanditiis minima nobis, ipsum voluptatem
+                    nesciunt suscipit iure reprehenderit repellendus? Hic, quibusdam quam.</p>.
+                <a href="#">Leer mas...</a>
+            </article>
+            <article class="article-class">
+                <img src="" alt="" class="logo-periodico">
+                <h3 class="titulo-noticia-lista">titulo</h3>
+                <p class="subt-noticia-lista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur
+                    ut esse natus. Itaque vero non a enim ratione esse consequuntur laborum reiciendis earum facilis
+                    atque maxime officiis, molestiae rem.</p>.
+                <a href="#">Leer mas...</a>
+            </article>
         </section>
     </main>
 </body>
+
 </html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    
+}
+
+#cont-slider{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    width: 76%;
+    border: 3px solid green;
+    height: auto;    
+}
+
+.buscador-caja{
+    display: block;
+    padding: 12px;
+    width: 23%;
+    border: 3px solid blue;
+    background-color: gainsboro;
+    text-align: center;
+    margin: 0 auto;
+    height: 27px;
+   
+
+}
+
+div{
+    display: inline-block;
+border: 3px red;
+padding: 10%;
+margin-left: 15%;
+
+}
+
+.pestaña-filtro{
+    display: block;
+    padding: 12px;
+    margin-top: 4%;
+    margin: 0 auto;
+    width: 23%;
+    border: 3px solid blue;
+    background-color: gainsboro;
+    text-align: center;
+    height: 50%;
+    margin-bottom: 3%;
+}
+
+.lista-noticias{
+    display: block;
+    border: 3px blue solid;
+    background-color: brown;
+    /* margin-top: 5%; */
+    margin: 0 auto;
+    width: 75%;
+    border: 1px solid green;
+    text-align: left;
+    height: 1100px;    
+    
+}
+
+.lista-noticias>ul{
+    display: inline-block;
+    
+    font-style: italic;  
+
+}
+/*  
+.lista-noticias>ul>li{
+  display: inline-block;
+  font-size: 300%;
+  
+  
+}
+
+.lista-noticias>ul>p{
+font-size: 120%;
+
+}
+
+*/
+.article-clase{
+    display: inline-block;
+  font-size: 120%;
+
+
+
+}
+
+.titulo-noticia-lista{
+    font-size: 300%;
+}
+
+.img-noticia{
+    display: block;
+    width: 100%;
+}
+
+.cont-noticia{
+    
+   
+}
+
+
+
+
+
+
+
