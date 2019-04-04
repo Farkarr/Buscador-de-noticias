@@ -10,6 +10,8 @@
     <script src="./js/slider.js"></script>
     <script src="./js/apiNews.js"></script>
     <script src="./js/desplegar-filtro.js"></script>
+    <script src="./js/noticiasFrancia.js"></script>
+    <script src="./js/buscador.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -27,10 +29,11 @@
     </header>
 
     <main>
-        <form action="">
+        <form action="#" class="form-busqueda">
             <input class="buscador-caja" type="text" placeholder="Escribe tu busqueda">
-            <button class="boton-busqueda">
-                <img src="" alt="" class="img-busqueda">
+            <button class="boton-busqueda" >
+                Buscar
+                <!-- <img src="" alt="" class="img-busqueda"> -->
             </button>
         </form>
         <button class="filtro">Filtrar</button>
@@ -43,39 +46,8 @@
             <option value="francia">Francia</option>
            
         </select>
-        <section class="lista-noticias">
-            <article class="article-class">
-                <img src="" alt="" class="logo-periodico">
-                <h3 class="titulo-noticia-lista">titulo</h3>
-                <p class="subt-noticia-lista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ducimus
-                    tempora aspernatur facilis doloribus ad quidem neque vero suscipit, id minima at nemo ea consectetur
-                    incidunt perferendis adipisci illum molestiae.</p>.
-                <a href="#">Leer mas...</a>
-            </article>
-            <article class="article-class">
-                <img src="" alt="" class="logo-periodico">
-                <h3 class="titulo-noticia-lista">titulo</h3>
-                <p class="subt-noticia-lista">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate,
-                    praesentium minima officiis placeat tempore nostrum illo necessitatibus recusandae velit quae, quam
-                    aliquam sint nisi tempora! Nobis non eaque accusamus ullam!</p>.
-                <a href="#">Leer mas...</a>
-            </article>
-            <article class="article-class">
-                <img src="" alt="" class="logo-periodico">
-                <h3 class="titulo-noticia-lista">titulo</h3>
-                <p class="subt-noticia-lista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam
-                    neque quibusdam, praesentium iste alias repudiandae veniam blanditiis minima nobis, ipsum voluptatem
-                    nesciunt suscipit iure reprehenderit repellendus? Hic, quibusdam quam.</p>.
-                <a href="#">Leer mas...</a>
-            </article>
-            <article class="article-class">
-                <img src="" alt="" class="logo-periodico">
-                <h3 class="titulo-noticia-lista">titulo</h3>
-                <p class="subt-noticia-lista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequuntur
-                    ut esse natus. Itaque vero non a enim ratione esse consequuntur laborum reiciendis earum facilis
-                    atque maxime officiis, molestiae rem.</p>.
-                <a href="#">Leer mas...</a>
-            </article>
+        <section class="lista-noticias" id="ancla-noticias">
+            
         </section>
     </main>
 </body>

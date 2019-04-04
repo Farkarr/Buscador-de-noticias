@@ -57,7 +57,7 @@ margin-left: 15%;
 }
 
 .lista-noticias{
-    display: block;
+    display: none;
     border: 3px #FF4532 solid;
     background-color: white;
     /* margin-top: 5%; */
@@ -65,7 +65,7 @@ margin-left: 15%;
     width: 75%;
     border: 6px solid #FF4532 ;
     text-align: left;
-    height: 1100px;    
+    height: auto;    
     
 }
 
@@ -91,14 +91,14 @@ font-size: 120%;
 */
 .article-clase{
     display: inline-block;
-  font-size: 120%;
+  /* font-size: 120%; */
 
 
 
 }
 
 .titulo-noticia-lista{
-    font-size: 300%;
+    /* font-size: 300%; */
 }
 
 .img-noticia{
