@@ -10,24 +10,23 @@ body{
 }
 
 #cont-slider{
-    display: inline-block;
-    padding: 150px;
-    margin-top: 5%;
-    margin-left: 13%;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 2%;
-    width: 50%;
+    margin-top: 5%;
+    width: 76%;
     border: 3px solid green;
-    text-align: center;
-    height: 23px;    
+    height: auto;    
 }
 
 .buscador-caja{
+    display: block;
     padding: 12px;
-    margin-left: 35%;
     width: 23%;
     border: 3px solid blue;
     background-color: gainsboro;
     text-align: center;
+    margin: 0 auto;
     height: 27px;
    
 
@@ -42,24 +41,24 @@ margin-left: 15%;
 }
 
 .pestaña-filtro{
+    display: block;
     padding: 12px;
     margin-top: 4%;
-    margin-left: 34.5%;
+    margin: 0 auto;
     width: 23%;
     border: 3px solid blue;
     background-color: gainsboro;
     text-align: center;
     height: 50%;
-
+    margin-bottom: 3%;
 }
 
 .lista-noticias{
-    display: inline-block;
+    display: block;
     border: 3px blue solid;
     background-color: brown;
-    margin-top: 1%;
-    margin-left: 13%;
-    margin-bottom: 2%;
+    /* margin-top: 5%; */
+    margin: 0 auto;
     width: 75%;
     border: 1px solid green;
     text-align: left;
@@ -99,7 +98,15 @@ font-size: 120%;
     font-size: 300%;
 }
 
+.img-noticia{
+    display: block;
+    width: 100%;
+}
 
+.cont-noticia{
+    
+   
+}
 
 
 
