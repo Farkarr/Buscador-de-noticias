@@ -30,8 +30,14 @@ body{
     text-align: center;
     margin: 0 auto;
     height: 27px;
+    font-size: 2vh;
+    color: white;
     
 
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
 }
 
 div{
@@ -45,7 +51,7 @@ margin-left: 15%;
 .pestaña-filtro{
     display: block;
     padding: 12px;
-    margin-top: 4%;
+    margin-top: 7%;
     margin: 0 auto;
     width: 23%;
     border: 3px solid #FF4532;
@@ -111,7 +117,7 @@ font-size: 120%;
     display: inline-block;
     margin-left: 70%;
     height: 30px;
-    
+    background-color: white;
 
 }
 
@@ -119,13 +125,42 @@ font-size: 120%;
     display: inline-block;
     margin-left: 10%;
     height: 30px;
-
+    background-color: white;
+    border-bottom-color: #FF6D5E;
 }
+
+
+.boton-busqueda{
+    margin-left: 58%;
+    margin-top: 0.5%;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #1883ba;
+    
+}
+
+.boton-busqueda:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
 
 .filtro{
-    
+    margin-left: 45%;
+    margin-top: 0.5%;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #6D67EB;
+    height: 45px;
+    width: 10%;
 
 }
+.filtro:hover {
+    color:#6D67EB;
+    background-color: #ffffff;
+}
+
+
 
 
 
