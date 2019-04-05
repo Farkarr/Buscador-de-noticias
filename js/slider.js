@@ -42,11 +42,11 @@ function slider(imgNot) {
     // }
 
     function playSlide() {
-        ;
+        
         slide = setInterval(pasarImg, 5000);
     }
 
-    // playSlide()
+    playSlide()
 }
 
 
