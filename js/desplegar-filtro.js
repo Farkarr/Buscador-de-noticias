@@ -5,15 +5,16 @@ window.addEventListener("load", function(){
     filtro.addEventListener("click", mostrarFiltro);
 
     function mostrarFiltro() {
-        var pestañaPais = document.querySelector(".pestaña-filtro");  
+        let pestañaPais = document.querySelector(".pestaña-filtro");  
+       
         
         // pestañaPais.style.visibility = "visible";
 
         if(pestañaPais.style.visibility != "visible"){
             pestañaPais.style.visibility = "visible";
+            
         }else{
             pestañaPais.style.visibility = "hidden";
         }
-        
     }
 });

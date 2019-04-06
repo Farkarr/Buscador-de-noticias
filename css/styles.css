@@ -1,54 +1,160 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    font-family: 'Acme', sans-serif;
 }
 
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    
+
+    background-image: url(../img/rosa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
-#cont-slider{
+/*Aqui esta todo el contenido del slider*/
+
+#cont-slider {
     display: block;
     margin: 0 auto;
-    margin-bottom: 2%;
     margin-top: 5%;
     width: 76%;
-    border: 3px solid#FF1800 ;
-    background-color:#FF6D5E ; 
-    height: auto;    
+    /* border: 3px solid#FF1800; */
+    background-color: #FF6D5E;
+    height: auto;
+    background-size: 100% 100%;
 }
 
-.buscador-caja{
+.img-noticia {
     display: block;
-    padding: 12px;
-    width: 23%;
-    border: 5px solid#FF4532 ;
-    
+    width: 100%;
+    height: 60vh;
+}
+
+.titulo-slider-noticia, .subt-slider-noticia{
+    display: block;
+    /* border: 1px solid black;   */
+    box-sizing: border-box;
+    height: 10vh;
+    padding: 2%;
+    color: #ffffff;
+    background-color: #FF6D5E;
+}
+
+.url-noticia{
+    color: white;
+}
+
+.titulo-subtitulo{
+    display: none;
+}
+
+.botones-slider {
+    display: block;
+    /* border: 3px solid red; */
+    width: 76.15%;
+    height: auto;
+    margin: 0 auto;
+    clear: both;
+    padding: 0;
+}
+
+.atras-slider, .delante-slider{
+    display: inline-block;
+    height: 40px;
+    background-color: #FF6D5E;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    transition: 500ms;
+    font-size: 1.5em;
+}
+
+.delante-slider {
+    margin: 0 -4px;
+}
+
+.atras-slider:hover{
+    background-color: #FF1800;
+}
+
+.delante-slider:hover{
+    background-color: #FF1800;
+}
+
+
+/*Estos son los estilos del buscador*/
+
+.form-busqueda{
+    display: block;
+    /* border: 1px solid black; */
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+.buscador-caja {
+    display: inline-block;
+    /* padding: 12px; */
+    width: 27%;
+    border: 5px solid #FF4532;
     background-color: #FF6D5E;
     text-align: center;
-    margin: 0 auto;
-    height: 27px;
-    font-size: 2vh;
-    color: white;
-    
-
-}
-
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    margin-left: 30%;
+    height: 6vh;
+    font-size: 1.5em;
     color: white;
 }
 
-div{
+.boton-busqueda{
     display: inline-block;
-border: 3px red;
-padding: 10%;
-margin-left: 15%;
-
+    /* border-radius: 6px; */
+    border: 5px solid #0055a5;
+    text-align: center;
+    width: 10%;
+    height: 7vh;
+    color: #ffffff;
+    background-color: #1883ba;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
-.pestaña-filtro{
+.boton-busqueda:hover{
+    color: #0055a5;
+    background-color: #ffffff;
+  }
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: white;
+}
+
+.filtro {
+    margin-left: 45%;
+    margin-top: 4%;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #6D67EB;
+    height: 45px;
+    width: 10%;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-bottom: 3%;
+}
+
+.filtro:hover {
+    color: #6D67EB;
+    background-color: #ffffff;
+}
+
+.ancla{
+    display: none;
+}
+
+.pestaña-filtro {
     display: block;
     padding: 12px;
     margin-top: 7%;
@@ -58,125 +164,75 @@ margin-left: 15%;
     background-color: gainsboro;
     text-align: center;
     height: 50%;
-    margin-bottom: 35%;
+    margin-bottom: 10%;
     visibility: hidden;
 }
 
-.lista-noticias{
+.lista-noticias {
     display: none;
-    border: 3px #FF4532 solid;
+    /* border: 3px #FF4532 solid; */
     background-color: white;
     /* margin-top: 5%; */
     margin: 0 auto;
     width: 75%;
-    border: 6px solid #FF4532 ;
+    /* border: 6px solid #FF4532; */
     text-align: left;
-    height: auto;    
-    
+    height: auto;
 }
 
-.lista-noticias>ul{
-    display: inline-block;
-    
-    font-style: italic;  
-
-}
-/*  
-.lista-noticias>ul>li{
-  display: inline-block;
-  font-size: 300%;
-  
-  
-}
-
-.lista-noticias>ul>p{
-font-size: 120%;
-
-}
-
-*/
-.article-clase{
-    display: inline-block;
-  /* font-size: 120%; */
-
-
-
-}
-
-.titulo-noticia-lista{
-    /* font-size: 300%; */
-}
-
-.img-noticia{
+.article-class {
     display: block;
-    width: 100%;
-    height: 100vh;
+    padding: 0%;
+    clear: both;
 }
 
-.atras-slider{
-    display: inline-block;
-    margin-left: 70%;
-    height: 30px;
-    background-color: white;
-    cursor: pointer;
-
+.logo-periodico{
+    width: 23.8%;
+    height: 25vh;
+    display: block;
+    float: left;
 }
 
-.delante-slider{
-    display: inline-block;
-    margin-left: 10%;
-    height: 30px;
-    background-color: white;
-    border-bottom-color: #FF6D5E;
-    cursor: pointer;
+.titulo-subt-lista{
+    display: block;
+    border-bottom: 1px solid white;
+    width: 76%;
+    height: 25vh;
+    margin-left: 0%;
+    background-color: #FF6D5E;
+    font-size: 1.5em;
+    float: right;
+    /* transition: 500ms; */
 }
 
+/* .titulo-subt-lista:hover{
+    background-color: #FF1800;
+} */
 
-.boton-busqueda{
-    margin-left: 58%;
-    margin-top: 0.5%;
-    border-radius: 6px;
-    color: #ffffff;
-    background-color: #1883ba;
-    cursor: pointer;
+.titulo-noticia-lista, .subt-noticia-lista, .info-noticia{
+    display: block;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    padding: 2%;
+    height: 9vh;
+    color: white;
 }
 
-.boton-busqueda:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
-
-
-.filtro{
-    margin-left: 45%;
-    margin-top: 0.5%;
-    border-radius: 6px;
-    color: #ffffff;
-    background-color: #6D67EB;
-    height: 45px;
-    width: 10%;
-    cursor: pointer;
-    margin-bottom: 3%;
-
-}
-.filtro:hover {
-    color:#6D67EB;
-    background-color: #ffffff;
+.info-noticia{
+    text-align: center;
+    transition: 700ms;  
 }
 
-.logo{
+.info-noticia:hover{
+    background-color: #FF1800;
+}
+
+.logo {
     margin-left: 5%;
     margin-top: 2%;
     border-radius: 6px;
     width: 9%;
-    
-  
-    
-    
 }
-
-
-
 
 
 

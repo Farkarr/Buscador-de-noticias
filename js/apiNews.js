@@ -5,9 +5,12 @@ window.addEventListener("load", () => {
     ajax.open("GET", "https://newsapi.org/v2/top-headlines?sources=google-news-ar&apiKey=308ccf64283c4e479da642742b092324", true);
     ajax.onreadystatechange = cargarNoticias;
     ajax.send(null);
-    var imagenes = [];
-    
-    slider(imagenes)
+    let imagenes = [];
+    let titulos = [];
+    let subTituloNoticia = [];
+    let urlNoticia = [];
+
+    slider(imagenes, titulos, subTituloNoticia, urlNoticia);
 
     function cargarNoticias(){
 
@@ -18,7 +21,7 @@ window.addEventListener("load", () => {
              
             articulos.articles.forEach(e => {
 
-                let contenedorNoticia = document.querySelector(".cont-noticia");
+                // let contenedorNoticia = document.querySelector(".cont-noticia");
 
                 // let infoNoticias = `
 
@@ -28,7 +31,10 @@ window.addEventListener("load", () => {
                 // `;
                 // contenedorNoticia.insertAdjacentHTML("beforeend", infoNoticias);
 
-                imagenes.push(e.urlToImage)
+                imagenes.push(e.urlToImage);
+                titulos.push(e.title);
+                subTituloNoticia.push(e.description);
+                urlNoticia.push(e.url);
 
              });
         }

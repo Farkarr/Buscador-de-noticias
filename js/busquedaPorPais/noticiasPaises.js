@@ -17,7 +17,7 @@ function noticiasFrancia() {
                         <img src="" alt="" class="logo-periodico">
                         <h3 class="titulo-noticia-lista">${e.title}</h3>
                         <p class="subt-noticia-lista"></p>.
-                        <a href="#">Leer mas...</a>
+                        <a href="${e.url}" target="_blank">Leer mas...</a>
                     </article>
                 `;
 
@@ -42,10 +42,12 @@ function noticiasArgentina() {
                 let noticias = `
 
                             <article class="article-class">
-                                <img src="" alt="" class="logo-periodico">
-                                <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                <p class="subt-noticia-lista"></p>.
-                                <a href="#">Leer mas...</a>
+                                <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                <div class="titulo-subt-lista">
+                                    <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                    <p class="subt-noticia-lista">${e.description}</p>
+                                    <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                </div>
                             </article>
                         `;
 

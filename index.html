@@ -7,38 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Buscador</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/apiNews.js"></script>
     <script src="./js/desplegar-filtro.js"></script>
     <script src="./js/buscador.js"></script>
     <script src="./js/busquedaPorPais/noticiasPaises.js"></script>
     <script src="./js/cargarNoticiasPais.js"></script>
+    <script src="./js/anclaJquery.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 </head>
 
 <body>
         <img src="./img/logo/Logotipo.PNG" class="logo">
     <header id="cont-slider">
-       
-        <img src="./img/coche.jpg" class="img-noticia">
-        <!-- <div class="cont-noticia">
-           
-            <h2 class="titulo-slider-noticia">Hola</h2>
-            <h3 class="subt-slider-noticia"></h3>
-        </div> -->
-        <button class="delante-slider">Delante</button>
-        <button class="atras-slider">Atras</button>
+        <a href="https://www.elmundo.es/ultimas-noticias.html" class="url-noticia" target="_blank">
+
+            <img src="./img/ultimas_noticias.jpg" class="img-noticia">
+            <div class="titulo-subtitulo">
+
+                <h2 class="titulo-slider-noticia"></h2> 
+                <hr>
+                <h3 class="subt-slider-noticia"></h3> 
+            </div>
+        </a>
+
     </header>
+    <div class="botones-slider">
+        <button class="atras-slider">Atras</button>
+        <button class="delante-slider">Delante</button>
+    </div>
 
     <main>
         <form action="#" class="form-busqueda">
-            <input class="buscador-caja" type="text" placeholder="Escribe tu busqueda">
+            <input class="buscador-caja" type="text" placeholder="Introduce tu busqueda">
             <button class="boton-busqueda" >
                 Buscar
                 <!-- <img src="" alt="" class="img-busqueda"> -->
             </button>
         </form>
         <button class="filtro">Filtrar por país</button>
+        <a href="#" class="ancla" data-ancla="lista-noticias">Ir a la lista de noticias</a>
         <select class="pestaña-filtro">
             <option value="pais">Seleccione un pais</option>
             <option value="argentina">Argentina</option>
@@ -51,7 +61,7 @@
             <option value="alemania">Alemania</option>
             <option value="venezuela">Venezuela</option>
         </select>
-        <section class="lista-noticias" id="ancla-noticias">
+        <section class="lista-noticias" id="lista-noticias">
             
         </section>
     </main>
