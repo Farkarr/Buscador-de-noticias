@@ -19,21 +19,29 @@ window.addEventListener("load", function () {
                         
                         data.articles.forEach(e => {
                             let titulo = e.title;
-
-                            let tituloSplit = titulo.split(" ");
+                            let tituloSplitMinus = titulo.toLowerCase().split(" ");
                             
-                            for(let i in tituloSplit){
+                            let descripcion = e.description;
+                            let descSplitMinus = descripcion.toLowerCase().split(" ");
+
+                            let contenido = e.content;
+                            let contSplitMinus = contenido.toLowerCase().split(" ");
+                            
+                            let i = 0, x = 0, y = 0;
+                            for(i, x, y; i < tituloSplitMinus.length, x < descSplitMinus.length, y < contSplitMinus.length; i++, x++, y++){
                                 
-                                if (tituloSplit[i] == palabra) {
+                                if (tituloSplitMinus[i] == palabra || descSplitMinus[x] == palabra || contSplitMinus[y] == palabra) {
 
                                     
                                     let palabraBuscada = `
 
                                         <article class="article-class">
-                                            <img src="" alt="" class="logo-periodico">
-                                            <h3 class="titulo-noticia-lista">${titulo}</h3>
-                                            <p class="subt-noticia-lista"></p>.
-                                            <a href="#">Leer mas...</a>
+                                            <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                            <div class="titulo-subt-lista">
+                                                <h3 class="titulo-noticia-lista">${titulo}</h3>
+                                                <p class="subt-noticia-lista">${descripcion}</p>
+                                                <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                            </div>
                                         </article>
                                     `;
 
@@ -45,21 +53,5 @@ window.addEventListener("load", function () {
                     });
 
     });
-
-function buscarNoticia(articulos, palabraClave) {
-
-    let array = [];
-
-    for (let i in articulos) {
-        let noticia = articulos[i];
-
-        array.push(noticia.title)
-    }
-    console.log(array)
-    // return array.indexOf(palabraClave) > -1;
-}
-
-
-
 
 });

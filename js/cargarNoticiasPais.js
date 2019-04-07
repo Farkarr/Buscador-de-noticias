@@ -13,47 +13,57 @@ window.addEventListener("load", function () {
             case "argentina":
                 noticiasArgentina();
                 mostrarAncla();
+                limpiarBusqueda();
                 break;
 
             case "francia":
                 noticiasFrancia();
                 mostrarAncla();
+                limpiarBusqueda();
                 break;
 
-            // case "venezuela":
-            //     noticiasVenezuela();
-            //     mostrarAncla();
-            //     break;
+            case "venezuela":
+                noticiasVenezuela();
+                mostrarAncla();
+                limpiarBusqueda();
+                break;
 
-            // case "alemania":
-            //     noticiasAlemania();
-            //     mostrarAncla();
-            //     break;
+            case "alemania":
+                noticiasAlemania();
+                mostrarAncla();
+                limpiarBusqueda();
+                break;
 
-            // case "usa":
-            //     noticiasUsa();
-            //     mostrarAncla();
-            //     break;
+            case "usa":
+                noticiasUsa();
+                mostrarAncla();
+                limpiarBusqueda();
+                break;
 
-            // case "italia    ":
-            //     noticiasItalia();
-            //     mostrarAncla();
-            //     break;
+            case "italia    ":
+                noticiasItalia();
+                mostrarAncla();
+                limpiarBusqueda();
+                break;
 
-            // case "uk":
-            //     noticiasUK();
-            //     mostrarAncla();
-            //     break;
+            case "uk":
+                noticiasUK();
+                mostrarAncla();
+                limpiarBusqueda();
+                capturarNot()
+                break;
 
-            // case "suecia":
-            //     noticiasSuecia();
-            //     mostrarAncla();
-            //     break;
+            case "suecia":
+                noticiasSuecia();
+                mostrarAncla();
+                limpiarBusqueda();
+                break;
 
-            // case "rusia":
-            //     noticiasRusia();
-            //     mostrarAncla();
-            //     break;
+            case "rusia":
+                noticiasRusia();
+                mostrarAncla();
+                limpiarBusqueda();
+                break;
         }
 
     }

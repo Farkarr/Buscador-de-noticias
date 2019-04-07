@@ -120,12 +120,13 @@ body{
     background-color: #1883ba;
     font-size: 1.5em;
     cursor: pointer;
+    transition: 500ms;
 }
 
 .boton-busqueda:hover{
     color: #0055a5;
     background-color: #ffffff;
-  }
+}
 
 ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
@@ -152,6 +153,26 @@ body{
 
 .ancla{
     display: none;
+}
+
+.limpiar-busqueda{
+    display: none;
+    margin: 0 auto;
+    border: 5px solid #0055a5;
+    text-align: center;
+    width: 10%;
+    height: 5vh;
+    margin-bottom: 2%;
+    color: #ffffff;
+    background-color: #1883ba;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.limpiar-busqueda:hover{
+    color: #0055a5;
+    background-color: #ffffff;
 }
 
 .pestaña-filtro {

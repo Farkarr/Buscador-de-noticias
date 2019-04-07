@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
                 subTituloNoticia.push(e.description);
                 urlNoticia.push(e.url);
 
-             });
+            });
         }
     }
 });
