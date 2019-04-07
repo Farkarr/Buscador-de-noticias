@@ -4,12 +4,14 @@ window.addEventListener("load", function () {
     let listaNoticias = document.querySelector(".lista-noticias");
     
     let botonBusqueda = document.querySelector(".boton-busqueda");
+    
     botonBusqueda.addEventListener("click", function (e) {
 
         e.preventDefault();
         listaNoticias.style.display = "block";
         let palabra = palabraBuscada.value;
-
+        limpiarBusqueda()
+        
         let url = "https://newsapi.org/v2/everything?sources=abc-news&apiKey=308ccf64283c4e479da642742b092324";
 
         let req = new Request(url);
@@ -21,9 +23,10 @@ window.addEventListener("load", function () {
                             let titulo = e.title;
                             let tituloSplitMinus = titulo.toLowerCase().split(" ");
                             
-                            let descripcion = e.description;
+                            let descripcion = e.description//.substr(0, 40);
                             let descSplitMinus = descripcion.toLowerCase().split(" ");
-
+                            // console.log(descSplitMinus)
+                            
                             let contenido = e.content;
                             let contSplitMinus = contenido.toLowerCase().split(" ");
                             

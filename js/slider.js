@@ -73,7 +73,7 @@ function slider(imgNot, titulo, descripcion, urlNot) {
         slide = setInterval(pasarImg, 5000);
     }
 
-    // playSlide()
+    playSlide()
 }
 
 

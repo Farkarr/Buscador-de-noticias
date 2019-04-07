@@ -14,21 +14,23 @@ function noticiasFrancia() {
         .then(response => {
             response.articles.forEach(e => {
 
-
-                let noticias = `
-
-                    <article class="article-class">
-                        <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                        <div class="titulo-subt-lista">
-                            <h3 class="titulo-noticia-lista">${e.title}</h3>
-                            <p class="subt-noticia-lista">${e.description}</p>
-                            <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                        </div>
-                    </article>
-                `;
-
                 
-                listaNoticias.insertAdjacentHTML('beforeend', noticias)
+                if (e.description != null) {
+                            
+                    let noticias = `
+
+                        <article class="article-class">
+                            <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                            <div class="titulo-subt-lista">
+                                <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                            </div>
+                        </article>
+                    `;
+
+                    listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                }
                 
                 
                 
@@ -49,19 +51,22 @@ function noticiasArgentina() {
             response.articles.forEach(e => {
 
 
-                let noticias = `
+                if (e.description != null) {
+                            
+                    let noticias = `
 
-                    <article class="article-class">
-                        <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                        <div class="titulo-subt-lista">
-                            <h3 class="titulo-noticia-lista">${e.title}</h3>
-                            <p class="subt-noticia-lista">${e.description}</p>
-                            <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                        </div>
-                    </article>
-                `;
+                        <article class="article-class">
+                            <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                            <div class="titulo-subt-lista">
+                                <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                            </div>
+                        </article>
+                    `;
 
-                listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                    listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                }
 
             });
         });
@@ -80,19 +85,22 @@ function noticiasAlemania() {
                     response.articles.forEach(e => {
 
 
-                        let noticias = `
-
-                            <article class="article-class">
-                                <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                                <div class="titulo-subt-lista">
-                                    <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                    <p class="subt-noticia-lista">${e.description}</p>
-                                    <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                                </div>
-                            </article>
-                        `;
-
-                        listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        if (e.description != null) {
+                            
+                            let noticias = `
+    
+                                <article class="article-class">
+                                    <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                    <div class="titulo-subt-lista">
+                                        <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                        <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                        <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                    </div>
+                                </article>
+                            `;
+    
+                            listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        }
 
                     });
                 });
@@ -111,20 +119,22 @@ function noticiasVenezuela() {
                     response.articles.forEach(e => {
 
 
-                        let noticias = `
+                        if (e.description != null) {
+                            
+                            let noticias = `
+    
+                                <article class="article-class">
+                                    <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                    <div class="titulo-subt-lista">
+                                        <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                        <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                        <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                    </div>
+                                </article>
+                            `;
 
-                            <article class="article-class">
-                                <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                                <div class="titulo-subt-lista">
-                                    <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                    <p class="subt-noticia-lista">${e.description}</p>
-                                    <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                                </div>
-                            </article>
-                        `;
-
-                        listaNoticias.insertAdjacentHTML('beforeend', noticias);
-
+                            listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        }    
                     });
                 });
 }
@@ -141,20 +151,22 @@ function noticiasRusia() {
                 .then(response => {
                     response.articles.forEach(e => {
 
-
-                        let noticias = `
-
-                            <article class="article-class">
-                                <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                                <div class="titulo-subt-lista">
-                                    <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                    <p class="subt-noticia-lista">${e.description}</p>
-                                    <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                                </div>
-                            </article>
-                        `;
-
-                        listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        if (e.description != null) {
+                            
+                            let noticias = `
+    
+                                <article class="article-class">
+                                    <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                    <div class="titulo-subt-lista">
+                                        <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                        <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                        <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                    </div>
+                                </article>
+                            `;
+    
+                            listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        }
 
                     });
                 });
@@ -173,19 +185,22 @@ function noticiasSuecia() {
                     response.articles.forEach(e => {
 
 
-                        let noticias = `
-
-                            <article class="article-class">
-                                <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                                <div class="titulo-subt-lista">
-                                    <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                    <p class="subt-noticia-lista">${e.description}</p>
-                                    <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                                </div>
-                            </article>
-                        `;
-
-                        listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        if (e.description != null) {
+                            
+                            let noticias = `
+    
+                                <article class="article-class">
+                                    <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                    <div class="titulo-subt-lista">
+                                        <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                        <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                        <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                    </div>
+                                </article>
+                            `;
+    
+                            listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        }
 
                     });
                 });
@@ -204,19 +219,22 @@ function noticiasUsa() {
                     response.articles.forEach(e => {
 
 
-                        let noticias = `
-
-                            <article class="article-class">
-                                <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                                <div class="titulo-subt-lista">
-                                    <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                    <p class="subt-noticia-lista">${e.description}</p>
-                                    <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                                </div>
-                            </article>
-                        `;
-
-                        listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        if (e.description != null) {
+                            
+                            let noticias = `
+    
+                                <article class="article-class">
+                                    <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                    <div class="titulo-subt-lista">
+                                        <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                        <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                        <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                    </div>
+                                </article>
+                            `;
+    
+                            listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        }
 
                     });
                 });
@@ -235,19 +253,22 @@ function noticiasUK() {
                     response.articles.forEach(e => {
 
 
-                        let noticias = `
-
-                            <article class="article-class">
-                                <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                                <div class="titulo-subt-lista">
-                                    <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                    <p class="subt-noticia-lista">${e.description}</p>
-                                    <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                                </div>
-                            </article>
-                        `;
-
-                        listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        if (e.description != null) {
+                            
+                            let noticias = `
+    
+                                <article class="article-class">
+                                    <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                    <div class="titulo-subt-lista">
+                                        <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                        <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                        <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                    </div>
+                                </article>
+                            `;
+    
+                            listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        }
 
                     });
                 });
@@ -266,19 +287,22 @@ function noticiasItalia() {
                     response.articles.forEach(e => {
 
 
-                        let noticias = `
-
-                            <article class="article-class">
-                                <img src="${e.urlToImage}" alt="" class="logo-periodico">
-                                <div class="titulo-subt-lista">
-                                    <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                    <p class="subt-noticia-lista">${e.description}</p>
-                                    <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
-                                </div>
-                            </article>
-                        `;
-
-                        listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        if (e.description != null) {
+                            
+                            let noticias = `
+    
+                                <article class="article-class">
+                                    <img src="${e.urlToImage}" alt="" class="logo-periodico">
+                                    <div class="titulo-subt-lista">
+                                        <h3 class="titulo-noticia-lista">${e.title}</h3>
+                                        <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                        <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
+                                    </div>
+                                </article>
+                            `;
+    
+                            listaNoticias.insertAdjacentHTML('beforeend', noticias);
+                        }
 
                     });
                 });
