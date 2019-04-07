@@ -9,6 +9,7 @@ window.addEventListener("load", () => {
     let titulos = [];
     let subTituloNoticia = [];
     let urlNoticia = [];
+    
 
     slider(imagenes, titulos, subTituloNoticia, urlNoticia);
 
