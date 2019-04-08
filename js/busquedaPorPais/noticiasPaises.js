@@ -159,7 +159,7 @@ function noticiasRusia() {
                                     <img src="${e.urlToImage}" alt="" class="logo-periodico">
                                     <div class="titulo-subt-lista">
                                         <h3 class="titulo-noticia-lista">${e.title}</h3>
-                                        <p class="subt-noticia-lista">${e.description.substring(0, 160)}...</p>
+                                        <p class="subt-noticia-lista">${e.description.substring(0, 100)}...</p>
                                         <a href="${e.url}" target="_blank" class="info-noticia">Mas info...</a>
                                     </div>
                                 </article>
