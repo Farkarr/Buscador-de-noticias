@@ -1,3 +1,5 @@
+//import { NewsApi } from "./global";
+
 window.addEventListener("load", function () {
 
 
@@ -11,7 +13,8 @@ window.addEventListener("load", function () {
 
         switch (selectedOption.value) {
             case "argentina":
-                noticiasArgentina();
+                //noticiasArgentina();
+                fetchNews(NewsApi.argentina);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
