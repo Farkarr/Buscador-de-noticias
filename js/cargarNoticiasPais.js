@@ -14,56 +14,55 @@ window.addEventListener("load", function () {
         switch (selectedOption.value) {
             case "argentina":
                 //noticiasArgentina();
-                fetchNews(NewsApi.argentina);
+                fetchNews(NewsApiKeys.argentina);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
 
             case "francia":
-                noticiasFrancia();
+                fetchNews(NewsApiKeys.francia);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
 
             case "venezuela":
-                noticiasVenezuela();
+                fetchNews(NewsApiKeys.venezuela);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
 
             case "alemania":
-                noticiasAlemania();
+                fetchNews(NewsApiKeys.alemania);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
 
             case "usa":
-                noticiasUsa();
+                fetchNews(NewsApiKeys.usa);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
 
             case "italia    ":
-                noticiasItalia();
+                fetchNews(NewsApiKeys.italia);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
 
             case "uk":
-                noticiasUK();
+                fetchNews(NewsApiKeys.uk);
                 mostrarAncla();
                 limpiarBusqueda();
-                capturarNot()
                 break;
 
             case "suecia":
-                noticiasSuecia();
+                fetchNews(NewsApiKeys.suecia);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
 
             case "rusia":
-                noticiasRusia();
+                fetchNews(NewsApiKeys.rusia);
                 mostrarAncla();
                 limpiarBusqueda();
                 break;
